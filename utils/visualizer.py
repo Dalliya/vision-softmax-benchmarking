@@ -84,7 +84,7 @@ class Visualizer:
             else:
                 status = "CRITICAL: COLLAPSE"
 
-            # Точное указание CE LOSS для технической грамотности
+            # Precise indication of CE LOSS for technical literacy
             box_text = (f"[{name.upper()}]\n"
                         f"STATUS : {status}\n"
                         f"CE LOSS: {losses[-1]:.2f} (--)\n"
@@ -97,7 +97,7 @@ class Visualizer:
 
         ax_loss.set_xlabel("EPOCH SEQUENCE", fontweight='bold', fontsize=12, color=Visualizer.COLOR_TEXT_G)
         
-        # Обновленные заголовки осей
+        # Updated axis titles
         ax_loss.set_ylabel("CROSS-ENTROPY LOSS (DASHED)", fontweight='bold', color=Visualizer.COLOR_TEXT_G)
         ax_acc.set_ylabel("ACCURACY % (SOLID)", fontweight='bold', color=Visualizer.COLOR_TEXT_G)
         
