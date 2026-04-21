@@ -118,7 +118,7 @@ class Visualizer:
         status = "PASSED" if accuracy > 70 else "WARNING" if accuracy > 35 else "CRITICAL FAILURE"
         color_title = Visualizer.COLOR_TEXT_G if accuracy > 70 else Visualizer.COLOR_WARN_Y if accuracy > 35 else Visualizer.COLOR_ERROR_R
         
-        # Заголовок теперь содержит CE LOSS
+        # The title now contains CE LOSS
         fig.suptitle(f">> {dataset_name.upper()} ACQUISITION: {status} | ACC: {accuracy:.1f}% | CE LOSS: {loss:.2f}", 
                      fontsize=15, fontweight='bold', y=0.96, color=color_title)
 
